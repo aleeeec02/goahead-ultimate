@@ -1,0 +1,35 @@
+.header{
+    background-color: #04A5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 15%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .nav-links{
+    list-style:none;
+    display: flex;
+    padding: 0;
+}
+
+.header .nav-links a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.header .nav-links .btn-login{
+    padding: 15px 30px 15px 30px;
+    background-color: #42B4EE;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.header .nav-links .btn-register{
+    padding: 15px;
+}
