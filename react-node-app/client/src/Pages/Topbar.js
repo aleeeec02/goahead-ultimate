@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useLocation  } from 'react-router-dom';
 import '../style-pages/Topbar.css';
 import Rutas from '../rutas';
+import logo from '../static/logo-goAhead.png'
 
 const Topbar = () => {
 
@@ -12,7 +13,7 @@ const Topbar = () => {
       <header className="header" id="Inicio">
         <div className="logo-principal">
           <Link to="/inicio">
-            <img src="./static/logo-goAhead.png" alt="" width="70px" />
+            <img src={logo} alt="" width="70px" />
           </Link>
         </div>
         <nav>
