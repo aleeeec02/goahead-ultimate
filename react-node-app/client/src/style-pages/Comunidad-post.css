@@ -1,0 +1,54 @@
+/* Post.css */
+.post {
+    border: 1px solid #ccc;
+    background-color: #04A5E5;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    .post-header{
+        display: flex;
+        gap: 20px;
+        .post-title-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .post-title{
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+            margin: 0;
+        }
+    }
+}
+.container-inner-button-like{
+    width: fit-content;
+    margin-left: auto;
+}
+.comunidad h2{
+    text-align: center;
+}
+  
+.like-button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .like-button.liked {
+    color: red;
+  }
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}

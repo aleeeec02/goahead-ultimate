@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation  } from 'react-router-dom';
 import '../style-pages/Foro-contenido.css';
 import logoAccountForo from '../static/account.png';
 
 const ForosContenido = ({ temaSeleccionado }) => {
+    
   const discusiones = [
     { id: 1, titulo: '¿Por qué la comida peruana es tan deliciosa?', contenido: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur....', propietario: 'Alexia Conza' },
     { id: 2, titulo: '¿Por qué la comida peruana es tan deliciosa?', contenido: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur....', propietario: 'Alexia Conza' },
@@ -41,9 +43,11 @@ const ForosContenido = ({ temaSeleccionado }) => {
             <h2>Foros de discusión</h2>
             <h3>{temaSeleccionado}</h3>
           </div>
-          <button onClick={handleNuevaDiscusion} className='btn-foro-nueva-discusion'>
-            Crear nueva discusión
-          </button>
+          <Link to={`/formDiscusion`}> 
+            <button onClick={handleNuevaDiscusion} className='btn-foro-nueva-discusion'>
+                Crear nueva discusión
+            </button>
+          </Link>
         </div>
       </div>
       <table>

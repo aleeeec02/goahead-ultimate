@@ -1,0 +1,36 @@
+
+.form-discusion-container .controllers{
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(189, 189, 189, 0.5);
+    border-radius: 5px;
+    color: #BDBDBD;
+}
+
+.form-discusion-container .input-submit{
+    width: 250px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(4, 165, 229, 1);
+    background-color: #04A5E5;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.form-discusion-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-discusion-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

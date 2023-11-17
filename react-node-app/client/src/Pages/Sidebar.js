@@ -31,6 +31,11 @@ const Sidebar = ({ userName }) => {
             Eventos
           </Link>
         </li>
+        <li className="sidebar-item">
+          <Link to="/comunidad" className="sidebar-link">
+            Comunidad
+          </Link>
+        </li>
         
         <div className='sidebar-last-item'>
           <hr />
