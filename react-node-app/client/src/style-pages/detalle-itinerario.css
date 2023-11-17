@@ -1,0 +1,40 @@
+.detalle-itinerario-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+  }
+  
+  .detalle-itinerario-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .detalle-itinerario-container p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .actividades {
+    margin-top: 20px;
+  }
+  
+  .actividad {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .actividad h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .actividad p {
+    color: #666;
+    margin: 0;
+  }
+  

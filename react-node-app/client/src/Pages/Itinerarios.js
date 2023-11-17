@@ -5,7 +5,6 @@ import '../style-pages/itinerario.css';
 function Itinerarios() {
   const [itinerarios, setItinerarios] = useState([]);
 
-  // Suponiendo que tienes un endpoint en tu servidor para obtener los itinerarios
   useEffect(() => {
     const fetchItinerarios = async () => {
       try {
@@ -23,6 +22,16 @@ function Itinerarios() {
     fetchItinerarios();
   }, []);
 
+  const ItinerarioAcciones = ({ id }) => (
+    <div className="acciones-itinerario">
+      <Link to={`/itinerario/${id}/actividades`} className="btn">Incorporar Actividades</Link>
+      <Link to={`/itinerario/${id}/lugares-de-interes`} className="btn">Lugares de Interés</Link>
+      <Link to={`/itinerario/${id}/horarios`} className="btn">Horarios</Link>
+      <Link to={`/busqueda-vuelos`} className="btn">Búsqueda de vuelos</Link>
+      <Link to={`/busqueda-alojamiento`} className="btn">Búsqueda de alojamiento</Link>
+    </div>
+  );
+
   return (
     <div className="itinerarios-container">
       <h1>Itinerario</h1>
@@ -30,8 +39,10 @@ function Itinerarios() {
         <ul>
           {itinerarios.map((itinerario, index) => (
             <li key={index}>
-              {itinerario.nombre} - {itinerario.destino}
-              {[/*[TODO***: Agregar más detalles aquí] */]}
+              <div>
+                {itinerario.nombre} - {itinerario.destino}
+                <ItinerarioAcciones id={itinerario.id} />
+              </div>
             </li>
           ))}
         </ul>

@@ -34,6 +34,7 @@ function CrearItinerario() {
   };
 
   return (
+    
     <div className="crear-itinerario-container">
       <h1>Crear Itinerario</h1>
       <form onSubmit={enviarItinerario}>
@@ -68,6 +69,8 @@ function CrearItinerario() {
               required 
             />
           ))}
+          
+
           <button type="button" onClick={agregarActividad}>Agregar Actividad</button>
         </div>
         <button type="submit">Guardar Itinerario</button>

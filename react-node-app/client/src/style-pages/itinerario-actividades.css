@@ -1,0 +1,48 @@
+.itinerario-actividades-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .itinerario-actividades-container h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .itinerario-actividades-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .itinerario-actividades-container li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .acciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .acciones .btn {
+    padding: 10px 15px;
+    background-color: #00b7ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .acciones .btn:hover {
+    background-color: #0056b3;
+  }
+  
