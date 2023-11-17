@@ -1,0 +1,48 @@
+.itinerarios-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f8f9fa; /* Cambia esto por el color de fondo de tus capturas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .itinerarios-container h1 {
+    color: #333; /* Cambia esto por el color de tu diseño */
+    margin-bottom: 20px;
+  }
+  
+  .itinerarios-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .itinerarios-container li {
+    background-color: #fff; /* Cambia esto por el color de los elementos de lista en tus capturas */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .itinerarios-container li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #04A5E5; /* Cambia esto por el color del botón en tus capturas */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Cambia esto por un color más oscuro que el del botón en tus capturas */
+  }
+  
