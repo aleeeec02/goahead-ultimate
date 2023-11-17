@@ -3,6 +3,8 @@ import React from 'react';
 import './App.css';
 import Topbar from './Pages/Topbar';
 import Sidebar from './Pages/Sidebar';
+import Itinerarios from './Pages/Itinerarios';
+
 import Rutas from './rutas';
 
 function App() {
