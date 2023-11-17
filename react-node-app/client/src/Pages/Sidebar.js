@@ -11,7 +11,7 @@ const Sidebar = ({ userName }) => {
           <p>Bienvenido, {userName}</p>
         </li>
         <li className="sidebar-item">
-          <Link to="/foros" className="sidebar-link">
+          <Link to="/foroInicio" className="sidebar-link">
             Foros
           </Link>
         </li>

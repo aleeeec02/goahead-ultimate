@@ -31,7 +31,7 @@ const Topbar = () => {
           </ul>
         </nav>
       </header>
-      <Rutas />
+      
     </div>
   );
 };

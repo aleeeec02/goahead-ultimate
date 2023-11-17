@@ -1,0 +1,39 @@
+.foro-inicio {
+    text-align: center;
+    padding: 20px;
+  }
+.foro-inicio h2{
+    font-size: 50px;
+}
+  
+  .foro-temas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en una fila */
+    gap: 10px;
+  }
+  
+  .tema-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .tema-button.selected {
+    background-color: #ddd;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  .tema-link{
+    border-radius: 5px;
+    padding: 30px 50px;
+    text-decoration: none;
+    background-color: #EFBA32;
+    color: #FFFFFFFF;
+    font-size: 20px;
+  }
+  .foro-inicio button{
+    margin-top: 150px;
+  }
