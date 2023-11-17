@@ -9,4 +9,5 @@
 .content {
   margin-left: 200px; /* Ancho de la barra lateral */
   padding: 20px;
+  margin: 0 auto;
 }
