@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/goahead-ultimate/static/css/main.17969f6c.css",
+    "main.js": "/goahead-ultimate/static/js/main.b8a652ab.js",
+    "static/js/787.d5fa4d18.chunk.js": "/goahead-ultimate/static/js/787.d5fa4d18.chunk.js",
+    "static/media/logo-goAhead.png": "/goahead-ultimate/static/media/logo-goAhead.f111d01541dc7afae740.png",
+    "index.html": "/goahead-ultimate/index.html",
+    "main.17969f6c.css.map": "/goahead-ultimate/static/css/main.17969f6c.css.map",
+    "main.b8a652ab.js.map": "/goahead-ultimate/static/js/main.b8a652ab.js.map",
+    "787.d5fa4d18.chunk.js.map": "/goahead-ultimate/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17969f6c.css",
+    "static/js/main.b8a652ab.js"
+  ]
+}
