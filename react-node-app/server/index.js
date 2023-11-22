@@ -1,15 +1,14 @@
 // server/index.js
 
 const express = require("express");
+const path = require("path");
 const fs = require('fs').promises;
-
 const cors = require('cors');
 const PORT = process.env.PORT || 3002;
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-
 
 
 
@@ -57,6 +56,12 @@ app.post('/api/itinerarios', async (req, res) => {
   } catch (error) {
     res.status(500).send('Error al escribir en el archivo JSON');
   }
+});
+
+app.use(express.static(path.join(__dirname, "../../client/build")));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../client/build/index.html'));
 });
 
 
