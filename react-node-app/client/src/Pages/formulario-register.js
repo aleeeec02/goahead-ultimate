@@ -1,5 +1,11 @@
 // FormularioRegistro.js
-import React from 'react';
+
+import React, {useState} from 'react';
+import axios from 'axios'
+
+
+
+
 import { Link, useLocation  } from 'react-router-dom';
 import Rutas from '../rutas';
 import '../style-pages/formulario-register.css';
