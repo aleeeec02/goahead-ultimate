@@ -6,6 +6,8 @@ import FormularioRegistro from './Pages/formulario-register';
 import FormularioPassword from './Pages/formulario-forgot-password';
 import CrearDiscusionForm from './Pages/form-discusion';
 import Comunidad from './Pages/Comunidad';
+import verItinerario from './Pages/VerItinerario';
+
 
 
 import Itinerarios from './Pages/Itinerarios';
@@ -26,6 +28,8 @@ const Rutas = () => {
       <Route path="/foroInicio" element={<Foros />} />
       <Route path="/foroContenido" element={<ForosContenido />} />
       <Route path="/formDiscusion" element={<CrearDiscusionForm />} />
+      <Route path="/verItinerario" element={<verItinerario />} />
+
 
       
     </Routes>

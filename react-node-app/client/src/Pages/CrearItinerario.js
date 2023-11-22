@@ -24,17 +24,26 @@ function CrearItinerario() {
 
   const enviarItinerario = async (evento) => {
     evento.preventDefault();
-    /*[TODO***: Implementar la lógica para conectar con una base de datos o con .json] */
-    console.log({
-      nombreItinerario,
-      destino,
-      actividades
-    });
-    navigate('/itinerarios');
+    try {
+      const response = await fetch('http://localhost:3001/api/itinerarios', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ nombreItinerario, destino, actividades }),
+      });
+      if (!response.ok) {
+        throw new Error('Error en la respuesta de la red');
+      }
+      const itinerarioGuardado = await response.json();
+      console.log('Itinerario guardado:', itinerarioGuardado);
+      navigate('/ver-itinerario', { state: { itinerario: itinerarioGuardado } }); // Usar state para pasar datos al componente de visualización
+    } catch (error) {
+      console.error('Error al guardar el itinerario:', error);
+    }
   };
 
   return (
-    
     <div className="crear-itinerario-container">
       <h1>Crear Itinerario</h1>
       <form onSubmit={enviarItinerario}>
@@ -69,8 +78,6 @@ function CrearItinerario() {
               required 
             />
           ))}
-          
-
           <button type="button" onClick={agregarActividad}>Agregar Actividad</button>
         </div>
         <button type="submit">Guardar Itinerario</button>
