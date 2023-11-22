@@ -32,9 +32,46 @@ const users = [
       res.status(401).json({ message: 'Credenciales incorrectas' });
     }
 });
+//Foros
+
+app.get('/api/temas', (req, res) => {
+  res.json(temas);
+});
+
+app.get('/api/discusiones', (req, res) => {
+  res.json(discusiones);
+});
+
+app.get('/api/discusiones/:tema', (req, res) => {
+  const tema = req.params.tema;
+  const discusionesPorTema = discusiones.filter(discusion => discusion.titulo === tema);
+  res.json(discusionesPorTema);
+});
+
+app.post('/api/crear-discusion', (req, res) => {
+  const nuevaDiscusion = req.body;
+  // Agregar la nueva discusión al arreglo de discusiones
+  discusiones.push(nuevaDiscusion);
+  res.json({ mensaje: 'Discusión creada con éxito' });
+});
+
+app.post('/api/seleccion-tema', (req, res) => {
+  const temaSeleccionado = req.body.temaSeleccionado;
+  // Aquí puedes manejar la selección del tema como desees
+  console.log(`Tema seleccionado: ${temaSeleccionado}`);
+  res.json({ mensaje: 'Tema seleccionado con éxito' });
+});
 
 
+//////////////////////////
 
+//Posts
+
+const posts = [];
+app.get('/api/posts', (req, res) => {
+  res.json(posts);
+});
+//////////////////////////
 app.get('/api/itinerarios', async (req, res) => {
   try {
     const data = await fs.readFile('itinerarios.json', 'utf8');
@@ -58,6 +95,7 @@ app.post('/api/itinerarios', async (req, res) => {
   }
 });
 
+//////////////////////////
 app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get('*', (req, res) => {
