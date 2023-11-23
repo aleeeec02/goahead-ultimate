@@ -1,4 +1,6 @@
 // FormularioLogin.js
+
+//[TODO: Recuperar contraseña como insertar correo]
 import React from 'react';
 import '../style-pages/formulario-forgot-password.css';
 

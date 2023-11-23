@@ -6,6 +6,9 @@ import FormularioRegistro from './Pages/formulario-register';
 import FormularioPassword from './Pages/formulario-forgot-password';
 import CrearDiscusionForm from './Pages/form-discusion';
 import Comunidad from './Pages/Comunidad';
+import CreatePost from './Pages/CreatePost';
+import PostDetail from './Pages/PostDetail';
+
 import verItinerario from './Pages/VerItinerario';
 
 
@@ -29,6 +32,10 @@ const Rutas = () => {
       <Route path="/foroContenido" element={<ForosContenido />} />
       <Route path="/formDiscusion" element={<CrearDiscusionForm />} />
       <Route path="/verItinerario" element={<verItinerario />} />
+      <Route path="/create-post" element={<CreatePost />} />
+      <Route path="/posts/:postId" element={<PostDetail />} />
+
+
 
 
       
